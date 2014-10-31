@@ -16,9 +16,13 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script>
           function pic1()
-        {
+          {
             document.getElementById("img").src = "boobs.jpeg";
-        }
+          }
+          function pic2()
+          {
+            document.getElementById("img").src="";
+          }
         </script>
     </head>
     <body>
@@ -26,7 +30,7 @@
       <div class="ui-content" role="main">
         <div class="location" style="position:absolute;height:100px;width:300px;z-index:15;top:60%;left:50%; margin:-100px 0 0 -150px;">
           <img src = "" id ="img" style="margin-left:50px;margin-top:-20px;height:300px; width:200px;"/>
-          <button type="button" onclick="pic1()">Click Me!</button>
+          <button type="button" onclick="pic1()" onclick="pic2()">Click Me!</button>
         </div>
       </div>
     </div>
